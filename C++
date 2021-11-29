@@ -1,0 +1,114 @@
+#include <stdio.h> 
+#include <stdlib.h>
+#include <conio.h>
+#include <string.h> 
+#include <locale.h>
+
+// declarando a estrutura Cliente 
+typedef struct{
+	int id;		// id deve ser incrementado automaticamente
+	char nome[50];
+	int idade;
+} Cliente;
+
+/* Protï¿½tipos das funcoes */
+void alocarMemoria(Cliente *cliente, int qtdCli);{
+	cliente = (cliente *) malooc((qtdCli+1) * sizeof(Cliente));
+	if (!Cliente) { 
+		printf("\nAlocaÃ§Ã£o de memÃ³ria nÃ£o realizada\n"); exit(1); 
+	}
+}
+void inserirCliente(Cliente *cliente, int *qtdCli);{
+	Cliente = (Cliente *) realloc(cliente, qtdCli * sizeof(Cliente));
+}
+
+void inserirCliente(Cliente *cliente, int *qtdCli) {
+
+		cliente[*qtdCli].id = *qtdCli+1;
+		printf("Digite o nome Cliente: ");
+		scanf("%c", &cliente[*qtdCli].nome);
+		printf("Digite sua idade: ");
+		scanf("%d", &cliente[*qtdCli].idade);
+		*qtdCli++;
+};
+
+int main(void){	
+	setlocale(LC_ALL, "Portuguese");
+
+	Cliente *c;			// Declarando ponteiro para uma estrutura de Clientes
+	int qtdCliArr = 0 ;	// Variavel de controle p/ qtd de Clientes no Array
+	int op;
+
+	do{	
+		printf("\n1- Inserir Cliente");
+		printf("\n2- Relatorio com dados dos Clientes");
+		printf("\n3- Consultar total de clientes cadastrados");
+		printf("\n4- Sair");
+		printf("\n\nSelecione o numeral desejado: ");
+		scanf("%d",&op);
+	
+	clientes = (Cliente) malooc(qtdCliAr sizeof(Cliente));
+	if (!Cliente) {
+
+		printf("N?o ser? possivel alocar a mem?ria\n");
+		exit(i);
+	}	
+	
+	do{	
+		printf("\n1- Inserir Cliente");
+		printf("\n2- Relatorio com dados dos Clientes");
+		printf("\n3- Consultar total de clientes cadastrados");
+		printf("\n4- Sair");
+		printf("\n\nSelecione a opcao desejada: ");
+		scanf("%d",&op);
+		
+		switch (op){
+			case 1:
+				// chama funï¿½ï¿½o para alocar/realocar mais uma posiï¿½ï¿½o
+				// chama funï¿½ï¿½o para inserir cliente
+				Clientes = (cliente) realloc(cliente, qtdClientArr sizeof(cliente)}
+				if (!Clientes) {
+					printf("\nNï¿½o serï¿½ possï¿½vel realocar a memï¿½ria\n");
+					exit(i);
+				}
+				
+				break;
+			case 2: 
+				// chama funï¿½ï¿½o para imprimir dados de todos os clientes cadastrados
+				break;
+			case 3:
+				// chama funï¿½ï¿½o para verificar qtd de clientes cadastrados
+				getQtdClientesCadastrados(qtdCliArr);
+				break;
+			case 4:
+				exit(1);
+				
+			default:
+				printf("\nOpï¿½ï¿½o invï¿½lida\n");
+				break;
+		}
+		
+	}while(1);
+	
+	free(c);
+	return 0;	
+}
+
+int getQtdClientesCadastrados(int qtd){
+	int 
+	printf("\n\nA quantidade de clientes cadastrados ï¿½: %d\n\n", qtd);
+}
+void alocarMemoria(Cliente *cliente, int qtdCli){
+	c = (int *(malooc((qtdCli+1)*sixeof(cliente));
+	if (!c){
+		printf("Nao sera possivel alocar a memoria\n");
+		exit(1);
+	}else{
+		
+	}
+};
+
+void realocarMemoria(Cliente /cliente, int *qtdCli){
+};
+void inserirCliente(Cliente *cliente, int qtdCli){
+};
